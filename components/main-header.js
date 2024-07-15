@@ -9,7 +9,7 @@ export default function MainHeader() {
         </div>
         <ul className="flex space-x-8 text-white text-lg font-semibold">
           <li className="hover:text-gray-300 transition duration-300">
-            <Link href="/">Home</Link>
+            <Link href="/">Homee </Link>
           </li>
           <li className="hover:text-gray-300 transition duration-300">
             <Link href="/news">News</Link>
