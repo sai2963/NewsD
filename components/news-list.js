@@ -1,15 +1,10 @@
 import Link from "next/link";
-import { DUMMY_NEWS } from "@/dummy-news";
 import Image from "next/image";
-import NewsList from "@/components/news-list";
-
-export default function NewsPage() {
-  return (
-    <div className="bg-gray-100 min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">News Page</h1>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <NewsList news={DUMMY_NEWS}/>
-        {/* {DUMMY_NEWS.map((newsItem) => (
+const NewsList = ({news}) => {
+    return (
+        <>
+            
+            {news.map((newsItem) => (
           <li key={newsItem.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <Link href={`/news/${newsItem.slug}`} className="block">
               <div className="relative w-full h-48">
@@ -26,8 +21,9 @@ export default function NewsPage() {
               </div>
             </Link>
           </li>
-        ))} */}
-      </ul>
-    </div>
-  );
+        ))}
+           
+        </>
+    )
 }
+export default NewsList;
