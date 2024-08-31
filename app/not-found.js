@@ -11,7 +11,7 @@ export default function PageNotFound() {
         </p>
         <Link href="/">
           <p className="text-blue-500 hover:text-blue-700 font-semibold text-lg transition duration-300">
-            Go to Homepage
+            Go to Homepage and analyze the news
           </p>
         </Link>
       </div>
